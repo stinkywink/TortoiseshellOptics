@@ -104,7 +104,7 @@ h1 {
     background-color: cadetblue;
     font-weight: bold;
     color: white;
-    max-width: 10rem;
+    width: 10rem;
     padding: 0.5rem 1.25rem;
 }
 .info p {
@@ -121,4 +121,81 @@ footer img {
     height: 1.5rem;
     margin-left: 2rem;
     margin-right: 1rem;
+}
+/* Media query */
+@media only screen and (max-width:1024px) {
+  header {
+    padding-top: 0;
+    height: 22rem;
+  }
+  .container {
+    width: 100%;
+  }
+  .main-banner {
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+  }
+  .main-banner h1 {
+    font-size: 1.33rem;
+  }
+}
+@media only screen and (max-width: 470px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .main-banner {
+    margin-top: 9rem;
+    padding-top: 1rem;
+    width: 100%;
+    margin-right: auto;
+  }
+  .truncated-menu {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  header span {
+    display: none;
+  }
+  .main-banner h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .supporting {
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem 0;
+  }
+  .service {
+    font-size: 0.77rem;
+    margin:auto;
+  }
+  .service + .service {
+    margin: 1.54rem;
+  }
+  .info {
+    width: auto;
+    margin-bottom: 4rem;
+  }
+  .title {
+    width: 100%;
+    margin-right: auto;
+  }
+  .info p {
+    font-size: 0.77rem;
+    
+  }
+  footer div {
+    display: none;
+  }
+  footer img {
+    justify-content: center;
+
+  }
+  footer {
+
+  }
 }
